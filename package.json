@@ -1,0 +1,15 @@
+{
+  "name": "anarchistlb-hugo",
+  "version": "1.0.0",
+  "description": "The site for Long Beach Anarchist Collective---now built with Hugo!",
+  "main": "postcss.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.7.1",
+    "postcss-cli": "^6.1.3"
+  }
+}

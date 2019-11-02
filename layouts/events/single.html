@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="flex-column banner-main">
+    <div class="container animated fadeInLeft">
+        <h1 class="">
+            {{ .Title  | markdownify }}
+            <small class="">
+                {{ partial "date-and-tags.html" . }}
+            </small>
+        </h1>
+    </div>
+</div>
+<div class="container-tight">
+    <div class="card">
+        {{ .Content  | markdownify }}
+        <hr>
+        <a class="button-dark" href="/events.html">See all upcoming events</a>
+    </div>
+</div>
+{{ end }}

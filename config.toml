@@ -1,0 +1,35 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Long Beach Anarchist Collective"
+
+[permalinks]
+  blog = "/:filename/"
+  
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Food Not Bombs"
+    url = "/foodnotbombs/"
+    weight = 2
+  [[menu.main]]
+    name = "Discussion Group"
+    url = "/discussiongroup"
+    weight = 3
+  [[menu.main]]
+    name = "Events"
+    url = "/events/"
+    weight = 4
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 5
+
+[taxonomies]
+  tag = "tags"
+
+[params]
+  dateFormat = "Jan 2, 2006"
+  favicon = "assets/images/anarchy_symbol.png"

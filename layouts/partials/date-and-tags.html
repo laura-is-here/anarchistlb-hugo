@@ -1,0 +1,16 @@
+<ul class="ul-no-bullets">
+  <li>
+    
+    {{ $dateTime := .PublishDate.Format "2006-01-02" }}
+    {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+    <time datetime="{{ $dateTime }}" class="post-tags"><i class="fas fa-calendar"></i>{{ .PublishDate.Format $dateFormat }}</time>
+  </li>
+  {{ with .Params.tags }}
+  {{ range . }}
+  <li>
+    {{ $href := print (absURL "tags/") (urlize .) }}
+    <a href="{{ $href }}" class="post-tags"><i class="fas fa-tags"></i>{{ . }}</a>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}

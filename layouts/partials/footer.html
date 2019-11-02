@@ -1,0 +1,47 @@
+<footer>
+	<div class="flex-container-lg container">
+		<div class="flex-column animateWhenVisible" id="contact">
+			<div>
+				<h2>Contact</h2>
+				<ul class="ul-no-bullets">
+					<li>
+						<a href="mailto:libsoclb@protonmail.com">
+						Email: libsoclb@protonmail.com
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/anarchistlb" target="_blank">
+						Twitter:  @anarchistlb
+						</a>
+					</li>
+					<li>
+						<a href="https://en.wikipedia.org/wiki/Criticism_of_Facebook" target="_blank">
+						Facebook: Never heard of it
+						</a>
+					</li>
+					<li>
+						<a href="https://ko-fi.com/fnbinthelbc" target="_blank" rel="noreferrer noopener">
+						Support Us: Donate on Ko-fi
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="flex-column bottom-nav animateWhenVisible">
+			<div>
+				<h2>Navigation</h2>
+				<ul class="ul-no-bullets">
+					{{ range .Site.Menus.main }}
+					<li>
+						<a class="" href="{{ .URL }}">
+							{{ .Name }}
+						</a>
+					</li>
+					{{ end }}
+				</ul>
+				
+			</div>
+		</div>
+		
+	</div>
+</footer>

@@ -1,0 +1,25 @@
+	<header>
+		<h1>
+			<a class="logo" href="/">
+				Long Beach Anarchist Collective
+			</a>
+		</h1>
+		<nav class="navbar">
+			<button class="menu-toggler" type="button">
+				<span>Menu</span>
+				<i class="fas fa-bars"></i>
+			</button>
+			
+			<div class="animated fadeInRight" id="">
+				<ul class="nav-links">
+					{{ range .Site.Menus.main }}
+					<li class="nav-link">
+						<a class="nav-link" href="{{ .URL }}">{{ .Name | safeHTML }}</a>
+					</li>
+					{{ end }}
+				</ul>
+			</div>
+		</nav>
+	</header>
+	
+	
