@@ -33,3 +33,7 @@ title = "Long Beach Anarchist Collective"
 [params]
   dateFormat = "Jan 2, 2006"
   favicon = "assets/images/anarchy_symbol.png"
+
+[blackfriday]
+  hrefTargetBlank = true
+  noreferrerLinks = true
