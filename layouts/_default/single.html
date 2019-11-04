@@ -1,7 +1,7 @@
 {{ define "main" }}
-<div class="flex-column banner-main">
-    <div class="container fadeInLeft animated">
-        <h1 class="">
+<div class="flex-column   banner-img banner-img--anarchy">
+    <div class="container   fadeInLeft animated">
+        <h1>
             {{ .Params.banner.main }}
             <br>
             <small>
@@ -10,11 +10,11 @@
         </h1>
     </div>
 </div>
-<div class="container-tight">
-    <div class="card">
+<div class="container-narrow">
+    <div class="padding--sm">
         {{ .Content | markdownify }}
         <hr>
-        <a class="button-dark" href="/events">See all upcoming events</a>
+        <a class="anchor--button-dark" href="/events">See all upcoming events</a>
     </div>
 </div>
 {{ end }}

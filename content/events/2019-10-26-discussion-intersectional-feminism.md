@@ -1,10 +1,17 @@
 ---
-title: "Discussion: Intersectional Feminism &mdash; Friday, November 8th at Page Against the Machine"
+title: "Discussion: Intersectional Feminism"
 date: 2019-10-26T13:12:16-07:00
 author: Long Beach Anarchist Collective
 tags: ["discussion group", "events", "feminism"] 
 img: "/assets/images/zines.jpg"
 img-alt: "Stacks of zines arranged on a table"
+event:
+  date: "November 8th"
+  start: "6:00pm"
+  end: "8:00pm"
+  location: "Page Against The Machine"
+banner:
+  main: "Discussion: Intersectional Feminism"
 ---
 Our next reading group discussion will be Friday, November 8th, from 6 - 8pm at Page Against the Machine, 2714 E 4th St.
 
@@ -14,13 +21,13 @@ Our next reading group discussion will be Friday, November 8th, from 6 - 8pm at 
 
 This discussion will center two short texts: 
 
-- [Audre Lorde's *The Master's Tools Will Never Dismantle the Master's House* (opens as PDF)](https://collectiveliberation.org/wp-content/uploads/2013/01/Lorde_The_Masters_Tools.pdf) 
+- {{< anchor "Audre Lorde's *The Master's Tools Will Never Dismantle the Master's House* (opens as PDF)" "https://collectiveliberation.org/wp-content/uploads/2013/01/Lorde_The_Masters_Tools.pdf" >}} 
 
 in which Lorde challenges radicals to reaffirm our commitment to dismantling not only the structures that incentivize oppression of those who are poor, queer, or POC, but also the expression of that oppression in our own behvior towards other radicals.
 
 &
 
-- [The Combahee River Collective Statement (opens as PDF)](https://americanstudies.yale.edu/sites/default/files/files/Keyword%20Coalition_Readings.pdf)
+- {{< anchor "The Combahee River Collective Statement (opens as PDF)" "https://americanstudies.yale.edu/sites/default/files/files/Keyword%20Coalition_Readings.pdf" >}}
 
 an expression of the political outlook of a feminist collective similarly committed to uprooting the social reproduction of oppressive behaviors in radical circles.
 

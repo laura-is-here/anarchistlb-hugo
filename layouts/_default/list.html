@@ -1,19 +1,18 @@
 {{ define "main" }}
-
 <div class="container">
-	<div class="border-bottom">
+	<div class="border--bottom">
 		<div class="flex-column">
 			<h1>
 				{{ .Title }}
 			</h1>
 		</div>
 	</div>
-	<ul class="grid-row ul-no-bullets">
+	<ul class="grid-row   ul-no-bullets">
 		{{ range .Pages.ByPublishDate.Reverse }}
-		<li class="">
-			<div class="flex-column animateWhenVisible">
+		<li>
+			<div class="flex-column   animateWhenVisible">
 				<div>
-					<h2><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
+					<h2><a href="{{ .RelPermalink }}" class="anchor anchor--inherit-style">{{ .Title | markdownify }}</a></h2>
 					<p>
 						<small class="post-tags">
 							{{ partial "date-and-tags.html" . }}
@@ -21,7 +20,7 @@
 					</p>
 					{{ .Summary | markdownify }}
 					<hr>
-					<a class="button-dark" href="{{ .RelPermalink }}">Read more</a>
+					<a class="anchor--button-dark" href="{{ .RelPermalink }}">Read more</a>
 				</div>
 			</div>
 		</li>

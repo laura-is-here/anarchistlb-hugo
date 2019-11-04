@@ -1,0 +1,17 @@
+<ul class="ul-no-bullets">
+    <li>
+        Event Details:
+    </li>
+    <li>
+            <i class="fas fa-calendar"></i>
+        {{ .Params.event.date }}
+    </li>
+    <li>
+            <i class="fas fa-clock"></i>
+        {{ .Params.event.start }}&ndash;{{ .Params.event.end}}
+    </li>
+    <li>
+            <i class="fas fa-map-pin"></i>
+        {{ .Params.event.location }}
+    </li>
+</ul>

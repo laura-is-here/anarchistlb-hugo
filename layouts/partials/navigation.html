@@ -1,24 +1,22 @@
-	<header>
+	<header class="bg--black  padding--lg">
 		<h1>
-			<a class="logo" href="/">
+			<a class="anchor--inherit-style" href="/">
 				Long Beach Anarchist Collective
 			</a>
 		</h1>
 		<nav class="navbar">
-			<button class="menu-toggler" type="button">
-				<span>Menu</span>
+			<button class="navbar__menu-toggler" type="button">
+				<div>Menu</div>
 				<i class="fas fa-bars"></i>
 			</button>
 			
-			<div class="" id="">
-				<ul class="nav-links">
-					{{ range .Site.Menus.main }}
-					<li class="nav-link">
-						<a class="nav-link" href="{{ .URL }}">{{ .Name | safeHTML }}</a>
-					</li>
-					{{ end }}
-				</ul>
-			</div>
+			<ul class="navbar__links navbar__links">
+				{{ range .Site.Menus.main }}
+				<li class="navbar__link">
+					<a class="navbar__link" href="{{ .URL }}">{{ .Name | safeHTML }}</a>
+				</li>
+				{{ end }}
+			</ul>
 		</nav>
 	</header>
 	

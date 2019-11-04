@@ -1,19 +1,32 @@
 {{ define "main" }}
-<div class="flex-column banner-main">
-    <div class="container animated fadeInLeft">
-        <h1 class="">
-            {{ .Title  | markdownify }}
-            <small class="">
-                {{ partial "date-and-tags.html" . }}
+<div class="grid-container   banner-img banner-img--anarchy">
+    <div class="grid-container__item-1 flex-column   animated fadeInLeft">
+        <h1>
+            {{ .Params.banner.main | markdownify }}
+            <br>
+            <small>
+                {{ .Params.banner.sub | markdownify }}
             </small>
         </h1>
     </div>
+    <div class="grid-container__item-2   bg--red   padding--lg">
+        <h2>
+            <small>
+                {{ partial "date-and-tags.html" . }}
+            </small>
+        </h2>
+        <h2>
+            <small>
+                {{ partial "event-info.html" . }}
+            </small>
+        </h2>
+    </div>
 </div>
-<div class="container-tight">
-    <div class="card">
+<div class="container-narrow">
+    <div class="padding--sm">
         {{ .Content  | markdownify }}
         <hr>
-        <a class="button-dark" href="/events">See all upcoming events</a>
+        <a class="anchor--button-dark" href="/events">See all upcoming events</a>
     </div>
 </div>
 {{ end }}
