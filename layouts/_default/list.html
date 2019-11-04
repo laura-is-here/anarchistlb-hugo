@@ -13,11 +13,11 @@
 			<div class="flex-column   animateWhenVisible">
 				<div>
 					<h2><a href="{{ .RelPermalink }}" class="anchor anchor--inherit-style">{{ .Title | markdownify }}</a></h2>
-					<p>
+					<span>
 						<small class="post-tags">
 							{{ partial "date-and-tags.html" . }}
 						</small>
-					</p>
+					</span>
 					{{ .Summary | markdownify }}
 					<hr>
 					<a class="anchor--button-dark" href="{{ .RelPermalink }}">Read more</a>

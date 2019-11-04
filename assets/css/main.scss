@@ -8,8 +8,7 @@
 /*---------------------- $GENERAL */
 
 :root {
-  --main-color: #c0392b;
-  --main-color-muted: #791000;
+  --main-color: hsl(6, 83%, 36%);
   --main-bg: #ecf0f1;
   --main-font-color: #454545;
   --main-font-family: Montserrat, sans-serif;
@@ -101,7 +100,7 @@ h4 {
   font-size: 1.25rem;
 }
 p {
-  max-width: 80ch;
+  max-width: 60ch;
 }
 
 
@@ -119,20 +118,20 @@ p {
 
 .banner-img--anarchy {
   background-image:
-  linear-gradient(rgba(0, 0, 0, 0.5),
-  rgba(0, 0, 0, 0.5)), url("/assets/images/a-backdrop.png");
+  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url("/assets/images/a-backdrop.png");
 }
 
 .banner-img--fnb{
   background-image:
-  linear-gradient(rgba(0, 0, 0, 0.5),
-  rgba(0, 0, 0, 0.5)), url("https://cdn.pixabay.com/photo/2017/11/06/17/04/vegetables-2924239_960_720.jpg");
+  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url("https://cdn.pixabay.com/photo/2017/11/06/17/04/vegetables-2924239_960_720.jpg");
 }
 
 .banner-img--zines{
   background-image:
-  linear-gradient(rgba(0, 0, 0, 0.5),
-  rgba(0, 0, 0, 0.5)), url("/assets/images/zines.jpg");
+  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url("/assets/images/zines.jpg");
 }
 
 
@@ -221,7 +220,7 @@ p {
 /*-------------- $COLORS */
 
 .bg--red {
-  background-color: #c0392b;
+  background-color: var(--main-color);
   color: var(--main-bg);
 }
 
@@ -455,6 +454,10 @@ p {
 .padding--sm--right {
   padding-right: 0.25rem;
   
+}
+
+.margin-0-auto {
+  margin: 0 auto;
 }
 
 .ul-no-bullets {

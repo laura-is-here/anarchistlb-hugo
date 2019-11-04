@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="grid-container   banner-img banner-img--anarchy">
-    <div class="grid-container__item-1 flex-column   animated fadeInLeft">
+    <div class="grid-container__item-1 container flex-column   animated fadeInLeft">
         <h1>
             {{ .Params.banner.main | markdownify }}
             <br>
@@ -8,6 +8,13 @@
                 {{ .Params.banner.sub | markdownify }}
             </small>
         </h1>
+        <p>
+            <strong>
+                <em>
+                    {{ .Summary | markdownify}}
+                </em>
+            </strong>
+        </p>
     </div>
     <div class="grid-container__item-2   bg--red   padding--lg">
         <h2>
