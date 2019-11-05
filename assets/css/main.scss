@@ -114,6 +114,10 @@ p {
   color: var(--main-bg);
   background-color: var(--dark-bg);
   min-height: 70vh;
+
+  @media #{$mq-medium} {
+    min-height: 0;
+  }
 }
 
 .banner-img--anarchy {
