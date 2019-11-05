@@ -32,7 +32,9 @@ title = "Long Beach Anarchist Collective"
 
 [params]
   dateFormat = "Jan 2, 2006"
-  favicon = "assets/images/anarchy_symbol.png"
+  favicon = "/assets/images/anarchy_symbol.png"
+  description = "We are a group of anarchists organizing to promote the spread of anarchist ideas & action in the greater Long Beach Area."
+  images = ["/assets/images/logo.png", "/assets/images/iceoutoflb-banner.jpg", "/assets/images/a-backdrop.png"]
 
 [blackfriday]
   hrefTargetBlank = true
