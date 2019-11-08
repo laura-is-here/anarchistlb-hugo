@@ -10,6 +10,7 @@
     {{ $title := print .Title " | " .Site.Title }}
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <title>{{ $title }}</title>
+    <meta name="description" content="We are a group of anarchists organizing to promote the spread of anarchist ideas & action in the greater Long Beach Area.">
     <script src="/assets/js/all.js" defer></script>
     <script src="/assets/js/animate.js" defer></script>
     {{ template "_internal/opengraph.html" . }}
