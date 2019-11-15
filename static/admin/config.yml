@@ -1,0 +1,35 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+# This line should *not* be indented
+publish_mode: editorial_workflow
+
+media_folder: "static/assets/images/uploads" #path for uploaded images (relative to project root)
+public_folder: "assets/images/uploads" #path for uploaded images src attribute
+
+collections:
+  - name: "events"
+    label: "Events"
+    folder: "content/events"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Author", name: "author", widget: "string", default: "Long Beach Anarchist Collective"}
+      - {label: "Tags", name: "tags", widget: "list", default: ["events"]}
+      - label: "Event Details"
+        name: "event"
+        widget: "list"
+        fields:
+          - {label: "Event Date" name: "date", widget: "datetime"}
+          - {label: "Event Start Time", name: "start", widget: "datetime"}
+          - {label: "Event End Time", name: "end", widget: "datetime"}
+          - {label: "Event Location", name: "location", widget: "string"}
+      - label: "Banner Text"
+        name: "banner"
+        widget: "list"
+        fields:
+          - {label: "Main Text", name: "main", widget: "string"}
+          - {label: "Sub Text", name: "sub", widget: "string"}
