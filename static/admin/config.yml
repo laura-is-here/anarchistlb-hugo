@@ -11,6 +11,7 @@ public_folder: "assets/images/uploads" #path for uploaded images src attribute
 collections:
   - name: "events"
     label: "Events"
+    label_singular: "Event"
     folder: "content/events"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -18,7 +19,11 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Author", name: "author", widget: "string", default: "Long Beach Anarchist Collective"}
-      - {label: "Tags", name: "tags", widget: "list", default: ["events"]}
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        default: ["events"]
+        field: {label: "Tags", name: "tags", widget: "string"}
       - label: "Event Details"
         name: "event"
         widget: "list"
