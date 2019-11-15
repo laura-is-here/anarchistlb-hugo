@@ -23,7 +23,7 @@ collections:
         name: "event"
         widget: "list"
         fields:
-          - {label: "Event Date" name: "date", widget: "datetime"}
+          - {label: "Event Date", name: "date", widget: "datetime"}
           - {label: "Event Start Time", name: "start", widget: "datetime"}
           - {label: "Event End Time", name: "end", widget: "datetime"}
           - {label: "Event Location", name: "location", widget: "string"}
