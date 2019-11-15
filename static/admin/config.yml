@@ -33,3 +33,4 @@ collections:
         fields:
           - {label: "Main Text", name: "main", widget: "string"}
           - {label: "Sub Text", name: "sub", widget: "string"}
+      - {label: "Post content", name: "body", widget: "markdown"}
