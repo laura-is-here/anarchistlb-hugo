@@ -1,0 +1,48 @@
+---
+label: event post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: author
+  label: author
+- type: list
+  name: tags
+  label: tags
+- type: file
+  name: img
+  label: img
+- type: textarea
+  name: img-alt
+  label: img-alt
+- type: field_group
+  name: event
+  label: event
+  fields:
+  - type: text
+    name: date
+    label: date
+  - type: text
+    name: start
+    label: start
+  - type: text
+    name: end
+    label: end
+  - type: text
+    name: location
+    label: location
+- type: field_group
+  name: banner
+  label: banner
+  fields:
+  - type: text
+    name: main
+    label: main
+  - type: text
+    name: sub
+    label: sub
