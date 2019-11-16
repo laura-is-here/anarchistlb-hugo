@@ -19,11 +19,6 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Author", name: "author", widget: "string", default: "Long Beach Anarchist Collective"}
-      - label: "Tags"
-        name: "tags"
-        widget: "list"
-        default: ["events"]
-        field: {label: "Tags", name: "tags", widget: "string"}
       - label: "Event Details"
         name: "event"
         widget: "list"
