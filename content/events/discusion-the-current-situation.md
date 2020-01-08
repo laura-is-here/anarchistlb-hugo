@@ -10,10 +10,10 @@ title = "Discusion: BLOCK THE BOAT"
 main = ""
 sub = ""
 [event]
-date = ""
-end = ""
-location = ""
-start = ""
+date = "1/10"
+end = "8pm"
+location = "Page Against the Machine LB"
+start = "6pm"
 
 +++
 Come out this Friday from 6-8 to discuss the current situation in Iran. We will be looking at 4 short texts that discuss past actions to disrupt the US war machine. As anarchists it is our firm belief that the war machine will not be stopped via the electoral process or by hollow protests, direct action and disruption get the goods. 
