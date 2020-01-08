@@ -1,7 +1,6 @@
 +++
 author = ""
 date = 2020-01-10T18:00:00Z
-draft = true
 img = "/images/uploads/Add a heading(1).jpg"
 img-alt = ""
 tags = []
