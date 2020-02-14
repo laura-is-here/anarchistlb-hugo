@@ -2,6 +2,10 @@
 
 > A static website to a political group. Built with Hugo and depoloyed on Netlify. Integrated with Forestry CMS for content management.
 
+__This repository is deprecated.__
+
+To see the latest repository, visit https://github.com/laura-is-here/anarchistlb-gatsby/
+
 ## Features
 
 - Add new pages from Markdown files (or using Forestry CMS)
